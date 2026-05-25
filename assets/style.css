@@ -7,7 +7,6 @@ body {
     background-image: url('../assets/img/img-7.webp');
 }
 
-/* Layout principal: sidebar + contenido */
 .site-layout {
     display: grid;
     grid-template-columns: 240px 1fr;
@@ -55,7 +54,6 @@ body {
     .grid { grid-template-columns: repeat(3, 1fr); }
 }
 
-/* para pantallas pequeñas */
 @media (max-width: 800px) {
     .site-layout { grid-template-columns: 1fr; }
     .sidebar { flex-direction: row; align-items: center; justify-content: space-between; padding: 12px; }
@@ -66,14 +64,11 @@ body {
 
 
 h1 {
-    text-shadow: 1.5px 1.5px 0px #e6d5b3; /* Sombra sólida decorativa */
+    text-shadow: 1.5px 1.5px 0px #e6d5b3; 
 }
-
-/* hogar */
 
 .tres-div-card {
     display: grid;
-    /* por defecto mostrar 1 tarjeta por fila */
     grid-template-columns: 1fr;
     gap: 20px;
     justify-items: center;
@@ -81,7 +76,6 @@ h1 {
     padding: 20px;
 }
 
-/* Si la pantalla tiene al menos 1024px, mostrar 3 tarjetas */
 @media (min-width: 1024px) {
     .tres-div-card {
         grid-template-columns: repeat(3, 1fr);
@@ -127,7 +121,6 @@ button:hover {
     background-color: rgb(255, 140, 0)
 }
 
-/*sobre nosotros*/
 .div-sobre-nosotros {
     display: flex;
     flex-direction: column;
@@ -152,8 +145,6 @@ button:hover {
     max-width: none;
 }
 
-
-/* contacto */
 #contacto {
     display: flex;
     justify-content: center;
@@ -174,7 +165,6 @@ button:hover {
 @keyframes rebote {
     from { left: 0px; }
     to { left: 150px; }
-    /* La animación moverá la caja de 0px a 200px a la izquierda */
 }
 
 .container {
@@ -220,7 +210,6 @@ footer a {
     font-weight: 600;
 }
 
-/* Estilos para la tarjeta de contacto */
 .una-div-card { display:flex; justify-content:center; }
 .card-blanca {
     background: rgba(255,255,255,0.95);
